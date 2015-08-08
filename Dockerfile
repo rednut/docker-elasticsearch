@@ -11,10 +11,10 @@ FROM java:jdk
 # Install ElasticSearch.
 RUN \
   cd /tmp && \
-  wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.tar.gz && \
-  tar xvzf elasticsearch-1.6.0.tar.gz && \
-  rm -f elasticsearch-1.6.0.tar.gz && \
-  mv /tmp/elasticsearch-1.6.0 /elasticsearch
+  wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.tar.gz && \
+  tar xvzf elasticsearch-1.7.1.tar.gz && \
+  rm -f elasticsearch-1.7.1.tar.gz && \
+  mv /tmp/elasticsearch-1.7.1 /elasticsearch
 
 # Define mountable directories.
 VOLUME ["/data"]
