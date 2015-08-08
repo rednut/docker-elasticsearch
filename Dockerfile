@@ -6,11 +6,11 @@
 
 # Pull base image.
 FROM java:jdk
-#dockerfile/java:oracle-java7
 
 # Install ElasticSearch.
 RUN \
   cd /tmp && \
+<<<<<<< HEAD
   wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.1.tar.gz && \
   tar xvzf elasticsearch-1.7.1.tar.gz && \
   rm -f elasticsearch-1.7.1.tar.gz && \
@@ -21,6 +21,7 @@ VOLUME ["/data"]
 
 # Mount elasticsearch.yml config
 ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+ADD data/ /data/
 
 # Define working directory.
 WORKDIR /data

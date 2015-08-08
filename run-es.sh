@@ -7,7 +7,7 @@ CONTAINER_NAME=elasticsearch
 IMAGE=rednut/elasticsearch
 VOLUME=/docker/elasticsearch
 CLUSTER_NAME=rednut-dev
-RAM=6144M
+RAM=4192M
 IP=10.0.10.2
 CIDR="/24"
 
